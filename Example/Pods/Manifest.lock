@@ -1,0 +1,16 @@
+PODS:
+  - OCMixins (0.1.0)
+
+DEPENDENCIES:
+  - OCMixins (from `../`)
+
+EXTERNAL SOURCES:
+  OCMixins:
+    :path: ../
+
+SPEC CHECKSUMS:
+  OCMixins: 44a9a9a1493e09aebe062dbaea67c98544efb467
+
+PODFILE CHECKSUM: 71976a6ba6aba7928469108e0cbb2d6ae8671b8b
+
+COCOAPODS: 1.0.1

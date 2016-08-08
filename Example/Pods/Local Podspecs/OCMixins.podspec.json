@@ -1,0 +1,22 @@
+{
+  "name": "OCMixins",
+  "version": "0.1.0",
+  "summary": "A short description of OCMixins.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/<GITHUB_USERNAME>/OCMixins",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "Henrique Morbin": "morbin_@hotmail.com"
+  },
+  "source": {
+    "git": "https://github.com/<GITHUB_USERNAME>/OCMixins.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "OCMixins/Classes/**/*"
+}

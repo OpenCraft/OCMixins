@@ -1,0 +1,6 @@
+framework module OCMixins {
+  umbrella header "OCMixins-umbrella.h"
+
+  export *
+  module * { export * }
+}
