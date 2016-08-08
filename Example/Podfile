@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'OCMixins_Example' do
+  pod 'OCMixins', :path => '../'
+
+  target 'OCMixins_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
