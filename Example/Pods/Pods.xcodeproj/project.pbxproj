@@ -7,16 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2D1FD4761D591D6600D4F69C /* TransparentNavigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D1FD4741D591D6600D4F69C /* TransparentNavigation.swift */; };
-		2D1FD4771D591D6600D4F69C /* TransparentModal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D1FD4751D591D6600D4F69C /* TransparentModal.swift */; };
+		140E392E7C68787E3F4B006640D862CA /* OCMixins-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 473A14CB545637D3B46EC267AA6D1E74 /* OCMixins-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4340DB01FE4D4773CC3442AC8913B56F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
 		5D5B303B5CBEE6BEA569B03B1A6AFCF5 /* Pods-OCMixins_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F60DFEF3990EBE665A574A90DFC02911 /* Pods-OCMixins_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		71336B7D253B7620D6F1FFD0A2612D07 /* OCMixins-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 534C624B082C3903C94098FFC08E5210 /* OCMixins-dummy.m */; };
 		7933AB3C2E5885C6C0C54E3EBB72EB4B /* Pods-OCMixins_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A264E5D3B668E3A6FE84B60D42A0A89C /* Pods-OCMixins_Tests-dummy.m */; };
 		7A7E582D0BC6F7386D859A11B693048F /* Pods-OCMixins_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A317BEFBC953637A00C6D91FDDC34731 /* Pods-OCMixins_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		823074E2A7A3621B399CDB26E452681B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
-		8DF32FBC6368F43EE67222832E3F80ED /* OCMixins-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 473A14CB545637D3B46EC267AA6D1E74 /* OCMixins-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		DB0CCFDA74E6F657A98FA5B3F2A2A3D0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
+		831D2B143D049BD0FB9A31814340F331 /* TransparentNavigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06593A54C546DCED9055C7D77024239B /* TransparentNavigation.swift */; };
+		9E49E06A6B2D3443D7CA0E76C194C792 /* TransparentModal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C895105FD4DEF48722B59FB0F92F2C8 /* TransparentModal.swift */; };
+		CF5A97703D604722FFC0B6CECF3C4B90 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
+		E8650BE1F78349DFBCF5F7A0BE2F3773 /* OCMixins-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 534C624B082C3903C94098FFC08E5210 /* OCMixins-dummy.m */; };
 		F28B80E130DF2EE56CC4570AA86EB88C /* Pods-OCMixins_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 20F0A02155C577F77F0CF70EC914C088 /* Pods-OCMixins_Example-dummy.m */; };
 /* End PBXBuildFile section */
 
@@ -25,21 +25,21 @@
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 0AFC6B691CDD021D719B44C36621983F;
+			remoteGlobalIDString = 485FBE5EDADE7784AEF4BB35C3C6C773;
 			remoteInfo = OCMixins;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		06593A54C546DCED9055C7D77024239B /* TransparentNavigation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TransparentNavigation.swift; sourceTree = "<group>"; };
 		1CCE1B0D23413C769E064142F549DA5C /* Pods-OCMixins_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-OCMixins_Example-resources.sh"; sourceTree = "<group>"; };
 		20F0A02155C577F77F0CF70EC914C088 /* Pods-OCMixins_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-OCMixins_Example-dummy.m"; sourceTree = "<group>"; };
-		2D1FD4741D591D6600D4F69C /* TransparentNavigation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransparentNavigation.swift; sourceTree = "<group>"; };
-		2D1FD4751D591D6600D4F69C /* TransparentModal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransparentModal.swift; sourceTree = "<group>"; };
 		2DBC292DA053B7BD0D601BE0950C862C /* Pods-OCMixins_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-OCMixins_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		309C160FFC1A7FBF4A00B640D0A93A70 /* Pods-OCMixins_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-OCMixins_Tests-resources.sh"; sourceTree = "<group>"; };
 		32A0C4083D450BB720A6126991AA7819 /* OCMixins.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = OCMixins.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		470BDC12647C05B4E47FA42E34F88A14 /* Pods-OCMixins_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-OCMixins_Tests.modulemap"; sourceTree = "<group>"; };
 		473A14CB545637D3B46EC267AA6D1E74 /* OCMixins-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "OCMixins-umbrella.h"; sourceTree = "<group>"; };
+		4C895105FD4DEF48722B59FB0F92F2C8 /* TransparentModal.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TransparentModal.swift; sourceTree = "<group>"; };
 		4E164E764D7AEE6334FB70C552C9C515 /* Pods-OCMixins_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-OCMixins_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		5329ACA5C0A31E2F30B320D859AD446D /* Pods-OCMixins_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-OCMixins_Example-acknowledgements.plist"; sourceTree = "<group>"; };
 		534C624B082C3903C94098FFC08E5210 /* OCMixins-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "OCMixins-dummy.m"; sourceTree = "<group>"; };
@@ -83,11 +83,11 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E48F65FA8A7196D54A2DA6DCEB83B883 /* Frameworks */ = {
+		B173F2BE6B2A796C00D31D4AAB223082 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DB0CCFDA74E6F657A98FA5B3F2A2A3D0 /* Foundation.framework in Frameworks */,
+				CF5A97703D604722FFC0B6CECF3C4B90 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -111,12 +111,13 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		2B53E642EA28179964B018480DD4AE8B /* OCMixins */ = {
+		33FD7DD540B14CD220AFACA24340249B /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				B2C037803E1FDCC0C29C184D76D4CEB7 /* Classes */,
+				4C895105FD4DEF48722B59FB0F92F2C8 /* TransparentModal.swift */,
+				06593A54C546DCED9055C7D77024239B /* TransparentNavigation.swift */,
 			);
-			path = OCMixins;
+			path = Classes;
 			sourceTree = "<group>";
 		};
 		3DCAB2B7CDE207B3958B6CB957FCC758 /* iOS */ = {
@@ -130,7 +131,7 @@
 		476319E35E5E17F8438382B9C49B217A /* OCMixins */ = {
 			isa = PBXGroup;
 			children = (
-				2B53E642EA28179964B018480DD4AE8B /* OCMixins */,
+				92BB1DB62CD7F4521A158C9A61166FB7 /* OCMixins */,
 				6AAF3456440E9D0A395639DD42E11546 /* Support Files */,
 			);
 			name = OCMixins;
@@ -180,13 +181,12 @@
 			);
 			sourceTree = "<group>";
 		};
-		B2C037803E1FDCC0C29C184D76D4CEB7 /* Classes */ = {
+		92BB1DB62CD7F4521A158C9A61166FB7 /* OCMixins */ = {
 			isa = PBXGroup;
 			children = (
-				2D1FD4741D591D6600D4F69C /* TransparentNavigation.swift */,
-				2D1FD4751D591D6600D4F69C /* TransparentModal.swift */,
+				33FD7DD540B14CD220AFACA24340249B /* Classes */,
 			);
-			path = Classes;
+			path = OCMixins;
 			sourceTree = "<group>";
 		};
 		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
@@ -244,34 +244,17 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C9BC559835DB1D0214558D051DF8B60F /* Headers */ = {
+		BDAEBBBB3C972F9653FE048C566E4EB7 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8DF32FBC6368F43EE67222832E3F80ED /* OCMixins-umbrella.h in Headers */,
+				140E392E7C68787E3F4B006640D862CA /* OCMixins-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		0AFC6B691CDD021D719B44C36621983F /* OCMixins */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = FB128FF863E15D7AF7C69AB1C095ADCD /* Build configuration list for PBXNativeTarget "OCMixins" */;
-			buildPhases = (
-				6AF7B653295461FCD16DFEE31EA5FB63 /* Sources */,
-				E48F65FA8A7196D54A2DA6DCEB83B883 /* Frameworks */,
-				C9BC559835DB1D0214558D051DF8B60F /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = OCMixins;
-			productName = OCMixins;
-			productReference = 32A0C4083D450BB720A6126991AA7819 /* OCMixins.framework */;
-			productType = "com.apple.product-type.framework";
-		};
 		2E698937CB311066BA8A0F5E365BF365 /* Pods-OCMixins_Tests */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = CC47441C77B3738E6CAB3CD9750FA40F /* Build configuration list for PBXNativeTarget "Pods-OCMixins_Tests" */;
@@ -287,6 +270,23 @@
 			name = "Pods-OCMixins_Tests";
 			productName = "Pods-OCMixins_Tests";
 			productReference = AE1679D6DBAF9A30F40BCEF1D1B9CE79 /* Pods_OCMixins_Tests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		485FBE5EDADE7784AEF4BB35C3C6C773 /* OCMixins */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B71228B561F7E46A7052955EF2550EE7 /* Build configuration list for PBXNativeTarget "OCMixins" */;
+			buildPhases = (
+				9FA7892935703F8FFB0623ED114426DA /* Sources */,
+				B173F2BE6B2A796C00D31D4AAB223082 /* Frameworks */,
+				BDAEBBBB3C972F9653FE048C566E4EB7 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = OCMixins;
+			productName = OCMixins;
+			productReference = 32A0C4083D450BB720A6126991AA7819 /* OCMixins.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		D18E0D186DE819A3BE93E8E5B5AFABE0 /* Pods-OCMixins_Example */ = {
@@ -328,7 +328,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				0AFC6B691CDD021D719B44C36621983F /* OCMixins */,
+				485FBE5EDADE7784AEF4BB35C3C6C773 /* OCMixins */,
 				D18E0D186DE819A3BE93E8E5B5AFABE0 /* Pods-OCMixins_Example */,
 				2E698937CB311066BA8A0F5E365BF365 /* Pods-OCMixins_Tests */,
 			);
@@ -336,13 +336,13 @@
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		6AF7B653295461FCD16DFEE31EA5FB63 /* Sources */ = {
+		9FA7892935703F8FFB0623ED114426DA /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2D1FD4771D591D6600D4F69C /* TransparentModal.swift in Sources */,
-				2D1FD4761D591D6600D4F69C /* TransparentNavigation.swift in Sources */,
-				71336B7D253B7620D6F1FFD0A2612D07 /* OCMixins-dummy.m in Sources */,
+				E8650BE1F78349DFBCF5F7A0BE2F3773 /* OCMixins-dummy.m in Sources */,
+				9E49E06A6B2D3443D7CA0E76C194C792 /* TransparentModal.swift in Sources */,
+				831D2B143D049BD0FB9A31814340F331 /* TransparentNavigation.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -368,7 +368,7 @@
 		7174F8D9EE9F8590363F3F3228BCE0CE /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = OCMixins;
-			target = 0AFC6B691CDD021D719B44C36621983F /* OCMixins */;
+			target = 485FBE5EDADE7784AEF4BB35C3C6C773 /* OCMixins */;
 			targetProxy = CE84C0DB512519F9EA79C0DC8328FB1D /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -446,7 +446,7 @@
 			};
 			name = Debug;
 		};
-		258DED92B248760FC116C310A5607C71 /* Release */ = {
+		176339F44E3E9019A6AD5032E3E78A0C /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = E617D8473BF384B60B8D5986E1339187 /* OCMixins.xcconfig */;
 			buildSettings = {
@@ -541,36 +541,6 @@
 			};
 			name = Release;
 		};
-		AB976F60006CBCB6BF8FC692BF1B5E30 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = E617D8473BF384B60B8D5986E1339187 /* OCMixins.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/OCMixins/OCMixins-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/OCMixins/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/OCMixins/OCMixins.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_NAME = OCMixins;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
 		D3E3D092A3FF7311A98E44BBA36FFD12 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -610,6 +580,36 @@
 				ONLY_ACTIVE_ARCH = YES;
 				STRIP_INSTALLED_PRODUCT = NO;
 				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		D697F2171CAEDD3AA58AD5D27155FBED /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E617D8473BF384B60B8D5986E1339187 /* OCMixins.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/OCMixins/OCMixins-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/OCMixins/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/OCMixins/OCMixins.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = OCMixins;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
 		};
@@ -667,20 +667,20 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		B71228B561F7E46A7052955EF2550EE7 /* Build configuration list for PBXNativeTarget "OCMixins" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D697F2171CAEDD3AA58AD5D27155FBED /* Debug */,
+				176339F44E3E9019A6AD5032E3E78A0C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		CC47441C77B3738E6CAB3CD9750FA40F /* Build configuration list for PBXNativeTarget "Pods-OCMixins_Tests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				F3DDED6EC9533B312E27259F9FDF4342 /* Debug */,
 				2AD70133B2B51D1FAEEA58A7AFC3C636 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		FB128FF863E15D7AF7C69AB1C095ADCD /* Build configuration list for PBXNativeTarget "OCMixins" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				AB976F60006CBCB6BF8FC692BF1B5E30 /* Debug */,
-				258DED92B248760FC116C310A5607C71 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
