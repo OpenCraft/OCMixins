@@ -1,6 +1,6 @@
 # OCMixins
 
-[![CI Status](http://img.shields.io/travis/Henrique Morbin/OCMixins.svg?style=flat)](https://travis-ci.org/Henrique Morbin/OCMixins)
+[![Build Status](https://www.bitrise.io/app/103a222f975d308d.svg?token=O9im8tX59w7nCGeae387Vg&branch=master)](https://www.bitrise.io/app/103a222f975d308d)
 [![Version](https://img.shields.io/cocoapods/v/OCMixins.svg?style=flat)](http://cocoapods.org/pods/OCMixins)
 [![License](https://img.shields.io/cocoapods/l/OCMixins.svg?style=flat)](http://cocoapods.org/pods/OCMixins)
 [![Platform](https://img.shields.io/cocoapods/p/OCMixins.svg?style=flat)](http://cocoapods.org/pods/OCMixins)
