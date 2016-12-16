@@ -14,7 +14,7 @@ public protocol TransparentNavigation: class {
 
 public extension TransparentNavigation where Self: UIViewController {
     
-    open var transparentNavigationBar: Bool {
+    public var transparentNavigationBar: Bool {
         get {
             return view.layer.value(forKey: transparentNavigationTransparentKey) as? Bool ?? false
         }
@@ -36,7 +36,7 @@ public extension TransparentNavigation where Self: UIViewController {
     fileprivate func updateNavBarState() {
         updateOptionsCache()
         
-        if transparentNavigationBar ?? false {
+        if transparentNavigationBar {
             navigationController?.navigationBar.setBackgroundImage(UIImage(), for: .default)
             navigationController?.navigationBar.shadowImage = UIImage()
             navigationController?.navigationBar.isTranslucent = true

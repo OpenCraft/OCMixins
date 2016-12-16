@@ -16,12 +16,12 @@ public protocol TransparentModal: class {
 
 public extension TransparentModal where Self: UIViewController {
     
-    open func applyTransparentBackground() {
+    public func applyTransparentBackground() {
         modalPresentationStyle = .overCurrentContext
         view.backgroundColor = UIColor.clear
     }
     
-    open var transparency: CGFloat {
+    public var transparency: CGFloat {
         get {
             return transparency
         }
@@ -30,7 +30,7 @@ public extension TransparentModal where Self: UIViewController {
         }
     }
     
-    open var transparencyAnimated: (CGFloat, TimeInterval?) {
+    public var transparencyAnimated: (CGFloat, TimeInterval?) {
         get {
             return transparencyAnimated
         }
