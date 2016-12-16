@@ -11,13 +11,13 @@ import OCMixins
 
 class DetailViewController: UIViewController, TransparentNavigation {
 
-    override func viewWillAppear(animated: Bool) {
+    override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
         transparentNavigationBar = true
     }
     
-    override func viewWillDisappear(animated: Bool) {
+    override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
         
         transparentNavigationBar = false

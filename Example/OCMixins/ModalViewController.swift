@@ -11,7 +11,7 @@ import OCMixins
 
 class ModalViewController: UIViewController, TransparentModal {
 
-    @IBAction func dismiss(sender: AnyObject) {
-        dismissViewControllerAnimated(true, completion: nil)
+    @IBAction func dismiss(_ sender: AnyObject) {
+        self.dismiss(animated: true, completion: nil)
     }
 }

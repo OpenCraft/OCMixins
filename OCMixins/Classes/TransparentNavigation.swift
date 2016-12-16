@@ -1,6 +1,6 @@
 //
 //  TransparentNavigation.swift
-//  ShowDoMilhao
+//  
 //
 //  Created by Henrique Morbin on 18/07/16.
 //  Copyright © 2016 Movile. All rights reserved.
@@ -14,9 +14,9 @@ public protocol TransparentNavigation: class {
 
 public extension TransparentNavigation where Self: UIViewController {
     
-    public var transparentNavigationBar: Bool {
+    open var transparentNavigationBar: Bool {
         get {
-            return view.layer.valueForKey(transparentNavigationTransparentKey) as? Bool ?? false
+            return view.layer.value(forKey: transparentNavigationTransparentKey) as? Bool ?? false
         }
         set {
             view.layer.setValue(newValue, forKey: transparentNavigationTransparentKey)
@@ -24,34 +24,34 @@ public extension TransparentNavigation where Self: UIViewController {
         }
     }
     
-    private var optionsCache: OptionsCache? {
+    fileprivate var optionsCache: OptionsCache? {
         get {
-            return view.layer.valueForKey(transparentNavigationOptionsCacheKey) as? OptionsCache
+            return view.layer.value(forKey: transparentNavigationOptionsCacheKey) as? OptionsCache
         }
         set {
             view.layer.setValue(newValue, forKey: transparentNavigationOptionsCacheKey)
         }
     }
     
-    private func updateNavBarState() {
+    fileprivate func updateNavBarState() {
         updateOptionsCache()
         
         if transparentNavigationBar ?? false {
-            navigationController?.navigationBar.setBackgroundImage(UIImage(), forBarMetrics: .Default)
+            navigationController?.navigationBar.setBackgroundImage(UIImage(), for: .default)
             navigationController?.navigationBar.shadowImage = UIImage()
-            navigationController?.navigationBar.translucent = true
-            navigationController?.navigationBar.barTintColor = UIColor.clearColor()
-            navigationController?.navigationBar.tintColor = UIColor.whiteColor()
+            navigationController?.navigationBar.isTranslucent = true
+            navigationController?.navigationBar.barTintColor = UIColor.clear
+            navigationController?.navigationBar.tintColor = UIColor.white
         } else {
-            navigationController?.navigationBar.setBackgroundImage(optionsCache?.backgroundImage, forBarMetrics: .Default)
+            navigationController?.navigationBar.setBackgroundImage(optionsCache?.backgroundImage, for: .default)
             navigationController?.navigationBar.shadowImage = optionsCache?.shadowImage
-            navigationController?.navigationBar.translucent = optionsCache?.translucent ?? true
+            navigationController?.navigationBar.isTranslucent = optionsCache?.translucent ?? true
             navigationController?.navigationBar.barTintColor = optionsCache?.barTintColor
             navigationController?.navigationBar.tintColor = optionsCache?.tintColor
         }
     }
     
-    private func updateOptionsCache() {
+    fileprivate func updateOptionsCache() {
         if optionsCache == nil {
             optionsCache = OptionsCache(withNavigationController: navigationController)
         }
@@ -70,9 +70,9 @@ private class OptionsCache {
     let barTintColor: UIColor?
     
     init(withNavigationController navigationController: UINavigationController?) {
-        backgroundImage = navigationController?.navigationBar.backgroundImageForBarMetrics(UIBarMetrics.Default)
+        backgroundImage = navigationController?.navigationBar.backgroundImage(for: UIBarMetrics.default)
         shadowImage = navigationController?.navigationBar.shadowImage
-        translucent = navigationController?.navigationBar.translucent
+        translucent = navigationController?.navigationBar.isTranslucent
         tintColor = navigationController?.navigationBar.tintColor
         barTintColor = navigationController?.navigationBar.barTintColor
     }
