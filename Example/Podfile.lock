@@ -1,5 +1,5 @@
 PODS:
-  - OCMixins (0.1.0)
+  - OCMixins (1.1.0)
 
 DEPENDENCIES:
   - OCMixins (from `../`)
@@ -9,8 +9,8 @@ EXTERNAL SOURCES:
     :path: ../
 
 SPEC CHECKSUMS:
-  OCMixins: 44a9a9a1493e09aebe062dbaea67c98544efb467
+  OCMixins: 9d28e670ae7366eaeaccf364f6dab5fe466b3c45
 
 PODFILE CHECKSUM: 71976a6ba6aba7928469108e0cbb2d6ae8671b8b
 
-COCOAPODS: 1.0.1
+COCOAPODS: 1.1.1

@@ -1,0 +1,33 @@
+# https://docs.fastlane.tools
+
+fastlane_version "2.0.3"
+default_platform :ios
+
+certificates_path = "./Fastlane/Certificates"
+apple_account_team = "U4D7MD5WUL"
+apple_account_username = "morbin_@hotmail.com"
+
+pod_name = "ochuds"
+bundle_identifier = "org.cocoapods.demo.OCHuds-Example"
+
+
+lane :development_keys do
+  cert(
+      development: true
+      output_path: certificates_path,
+      username: apple_account_username,
+      team_id: apple_account_team,
+      force: false,
+  )
+  sigh(
+      force: true,
+      output_path: certificates_path,
+      development: true
+      app_identifier: bundle_identifier,
+      username: apple_account_username,
+      team_id: apple_account_team,
+      skip_install: false,
+      filename: "fastlane_development_provisioning_#{pod_name}.mobileprovision",
+      provisioning_name: "fastlane-development-#{pod_name}"
+  )
+end
