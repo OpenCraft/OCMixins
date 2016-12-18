@@ -7,22 +7,30 @@ certificates_path = "./Fastlane/Certificates"
 apple_account_team = "U4D7MD5WUL"
 apple_account_username = "morbin_@hotmail.com"
 
-pod_name = "ochuds"
-bundle_identifier = "org.cocoapods.demo.OCHuds-Example"
+pod_name = "ocmixins"
+bundle_identifier = "org.cocoapods.demo.OCMixins-Example"
 
 
 lane :development_keys do
   cert(
-      development: true
+      development: true,
       output_path: certificates_path,
       username: apple_account_username,
       team_id: apple_account_team,
       force: false,
   )
+  produce(
+      username: apple_account_username,
+      app_identifier: bundle_identifier,
+      skip_itc: true,
+      skip_devcenter: false,
+      team_id: apple_account_team,
+      app_name: "pod #{pod_name}",
+  )
   sigh(
       force: true,
       output_path: certificates_path,
-      development: true
+      development: true,
       app_identifier: bundle_identifier,
       username: apple_account_username,
       team_id: apple_account_team,

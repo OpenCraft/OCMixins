@@ -33,6 +33,7 @@
 		230FDB9CD64AE3B104CA2500 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		2D1FD4781D59234B00D4F69C /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		2D1FD47A1D59255B00D4F69C /* ModalViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModalViewController.swift; sourceTree = "<group>"; };
+		2D583C7B1E073BD0002A11C0 /* Fastlane */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Fastlane; sourceTree = "<group>"; };
 		34666CD856F155217640F3C5 /* Pods-OCMixins_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OCMixins_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-OCMixins_Tests/Pods-OCMixins_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		566C07F1099D220E8E0583AA /* Pods-OCMixins_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OCMixins_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-OCMixins_Tests/Pods-OCMixins_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		607FACD01AFB9204008FA782 /* OCMixins_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OCMixins_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -152,6 +153,7 @@
 				7F39920BF12EB48AB30DB53C /* OCMixins.podspec */,
 				C0181F1AB9A8244F30312821 /* README.md */,
 				230FDB9CD64AE3B104CA2500 /* LICENSE */,
+				2D583C7B1E073BD0002A11C0 /* Fastlane */,
 			);
 			name = "Podspec Metadata";
 			sourceTree = "<group>";
@@ -223,11 +225,13 @@
 						CreatedOnToolsVersion = 6.3.1;
 						DevelopmentTeam = U4D7MD5WUL;
 						LastSwiftMigration = 0810;
+						ProvisioningStyle = Manual;
 					};
 					607FACE41AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
 						DevelopmentTeam = U4D7MD5WUL;
 						LastSwiftMigration = 0810;
+						ProvisioningStyle = Manual;
 						TestTargetID = 607FACCF1AFB9204008FA782;
 					};
 				};
@@ -513,6 +517,8 @@
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "88c0b38a-d932-484e-8388-dc08837d7f2a";
+				PROVISIONING_PROFILE_SPECIFIER = "fastlane-development-ocmixins";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -529,6 +535,8 @@
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "88c0b38a-d932-484e-8388-dc08837d7f2a";
+				PROVISIONING_PROFILE_SPECIFIER = "fastlane-development-ocmixins";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
