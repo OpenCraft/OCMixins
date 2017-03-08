@@ -29,11 +29,32 @@ public enum GradientOrientation {
     }
 }
 
-protocol NavigationBarGradient {
+public protocol NavigationBarGradient {
     func setupNavigationBarGradient(orientation: GradientOrientation, colors: [UIColor])
+    func removeGradientFromNavigationBar()
 }
 
-extension NavigationBarGradient where Self: UIViewController {
+struct DefaultValues {
+    var backgroundImage: UIImage?
+    var shadowImage: UIImage?
+    var isTranslucid: Bool?
+    var gradientView: UIView?
+}
+
+fileprivate var defaultValues = DefaultValues()
+public extension NavigationBarGradient where Self: UIViewController {
+    
+    func removeGradientFromNavigationBar() {
+        
+        guard let navigationController = navigationController else {
+            return
+        }
+        
+        navigationController.navigationBar.setBackgroundImage(defaultValues.backgroundImage, for: .default)
+        navigationController.navigationBar.shadowImage = defaultValues.shadowImage
+        navigationController.navigationBar.isTranslucent = defaultValues.isTranslucid ?? false
+        defaultValues.gradientView?.removeFromSuperview()
+    }
     
     func setupNavigationBarGradient(orientation: GradientOrientation, colors: [UIColor]) {
         guard let navigationController = navigationController else {
@@ -44,20 +65,24 @@ extension NavigationBarGradient where Self: UIViewController {
         
         let navigationBar = navigationController.navigationBar
         let layer = getGradientLayer(orientation: orientation, colors: colors.flatMap { $0.cgColor })
-        
         let width = UIApplication.shared.statusBarFrame.width
         let height = UIApplication.shared.statusBarFrame.height + navigationController.navigationBar.frame.height
         
-        let behindView = UIView(frame: CGRect(x: 0, y: 0, width: width, height: height))
-        behindView.layer.insertSublayer(layer, at: 0)
+        let gradientView = UIView(frame: CGRect(x: 0, y: 0, width: width, height: height))
+        gradientView.layer.insertSublayer(layer, at: 0)
         
-        navigationController.view.insertSubview(behindView, belowSubview: navigationBar)
+        defaultValues.gradientView = gradientView
+        navigationController.view.insertSubview(gradientView, belowSubview: navigationBar)
     }
     
     final fileprivate func setupNavigationBarTransparent() {
         guard let navigationController = navigationController else {
             return
         }
+        
+        defaultValues.backgroundImage = navigationController.navigationBar.backgroundImage(for: .default)
+        defaultValues.shadowImage = navigationController.navigationBar.shadowImage
+        defaultValues.isTranslucid = navigationController.navigationBar.isTranslucent
         
         navigationController.navigationBar.setBackgroundImage(UIImage(), for: .default)
         navigationController.navigationBar.shadowImage = UIImage()

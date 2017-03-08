@@ -20,5 +20,4 @@ class GradientViewController: UIViewController, NavigationBarGradient {
         super.viewWillDisappear(true)
         removeGradientFromNavigationBar()
     }
-
 }
