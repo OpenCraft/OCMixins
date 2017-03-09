@@ -34,7 +34,7 @@ public protocol NavigationBarGradient {
     func removeGradientFromNavigationBar()
 }
 
-struct DefaultValues {
+fileprivate struct DefaultValues {
     var backgroundImage: UIImage?
     var shadowImage: UIImage?
     var isTranslucid: Bool?
