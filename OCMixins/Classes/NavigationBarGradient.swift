@@ -51,7 +51,7 @@ public extension NavigationBarGradient where Self: UIViewController {
             return
         }
         
-        guard navigationController.view.subviews.filter({ $0 is GradientView }).count == 0 else {
+        guard navigationController.view.subviews.filter({ $0 is GradientView }).count > 0 else {
             return
         }
         
