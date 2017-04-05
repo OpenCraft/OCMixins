@@ -40,6 +40,7 @@ fileprivate struct DefaultValues {
     var isTranslucid: Bool?
     var gradientView: UIView?
 }
+class GradientView: UIView {}
 
 fileprivate var defaultValues = DefaultValues()
 public extension NavigationBarGradient where Self: UIViewController {
@@ -47,6 +48,10 @@ public extension NavigationBarGradient where Self: UIViewController {
     func removeGradientFromNavigationBar() {
         
         guard let navigationController = navigationController else {
+            return
+        }
+        
+        guard navigationController.view.subviews.filter({ $0 is GradientView }).count == 0 else {
             return
         }
         
@@ -61,6 +66,10 @@ public extension NavigationBarGradient where Self: UIViewController {
             return
         }
         
+        guard navigationController.view.subviews.filter({ $0 is GradientView }).count == 0 else {
+            return
+        }
+        
         setupNavigationBarTransparent()
         
         let navigationBar = navigationController.navigationBar
@@ -68,7 +77,7 @@ public extension NavigationBarGradient where Self: UIViewController {
         let width = UIApplication.shared.statusBarFrame.width
         let height = UIApplication.shared.statusBarFrame.height + navigationController.navigationBar.frame.height
         
-        let gradientView = UIView(frame: CGRect(x: 0, y: 0, width: width, height: height))
+        let gradientView = GradientView(frame: CGRect(x: 0, y: 0, width: width, height: height))
         gradientView.layer.insertSublayer(layer, at: 0)
         
         defaultValues.gradientView = gradientView
