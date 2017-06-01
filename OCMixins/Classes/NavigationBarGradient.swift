@@ -51,14 +51,18 @@ public extension NavigationBarGradient where Self: UIViewController {
             return
         }
         
-        guard navigationController.view.subviews.filter({ $0 is GradientView }).count > 0 else {
+        let views = navigationController.view.subviews.flatMap({ $0 as? GradientView })
+        views.forEach { view in
+            view.removeFromSuperview()
+        }
+        
+        guard views.count > 0 else {
             return
         }
         
         navigationController.navigationBar.setBackgroundImage(defaultValues.backgroundImage, for: .default)
         navigationController.navigationBar.shadowImage = defaultValues.shadowImage
         navigationController.navigationBar.isTranslucent = defaultValues.isTranslucid ?? false
-        defaultValues.gradientView?.removeFromSuperview()
     }
     
     func setupNavigationBarGradient(orientation: GradientOrientation, colors: [UIColor]) {
