@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'OCMixins'
-  s.version          = '1.3.1'
+  s.version          = '1.3.2'
   s.summary          = 'A bunch of awesome mixins.'
 
 # This description is used to generate tags and improve search results.
@@ -31,7 +31,7 @@ A bunch of awesome mixins. NavigationBar transparent, ViewController transparent
   s.ios.deployment_target = '8.0'
 
   s.source_files = 'OCMixins/Classes/**/*'
-  
+
   # s.resource_bundles = {
   #   'OCMixins' => ['OCMixins/Assets/*.png']
   # }

@@ -11,7 +11,7 @@
 		2D1FD4791D59234B00D4F69C /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D1FD4781D59234B00D4F69C /* DetailViewController.swift */; };
 		2D1FD47B1D59255B00D4F69C /* ModalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D1FD47A1D59255B00D4F69C /* ModalViewController.swift */; };
 		3F3C29DB1341F5620CDC790C /* Pods_OCMixins_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA3A014EEA2D5F87EC09B819 /* Pods_OCMixins_Example.framework */; };
-		4E9752471E70C6200025E1D2 /* GradientViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E9752461E70C6200025E1D2 /* GradientViewController.swift */; };
+		4E2E12231EE09C7200A5655C /* GradientViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E9752461E70C6200025E1D2 /* GradientViewController.swift */; };
 		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
 		607FACD81AFB9204008FA782 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD71AFB9204008FA782 /* ViewController.swift */; };
 		607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 607FACD91AFB9204008FA782 /* Main.storyboard */; };
@@ -378,7 +378,7 @@
 			files = (
 				2D1FD47B1D59255B00D4F69C /* ModalViewController.swift in Sources */,
 				2D1FD4791D59234B00D4F69C /* DetailViewController.swift in Sources */,
-				4E9752471E70C6200025E1D2 /* GradientViewController.swift in Sources */,
+				4E2E12231EE09C7200A5655C /* GradientViewController.swift in Sources */,
 				607FACD81AFB9204008FA782 /* ViewController.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
 			);
